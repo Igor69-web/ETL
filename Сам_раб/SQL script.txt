@@ -1,4 +1,4 @@
-````CREATE TABLE customers (
+CREATE TABLE customers (
     id SERIAL PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
@@ -17,4 +17,4 @@ CREATE TABLE active_customers (
     last_order_date VARCHAR(4),
     status VARCHAR(20) NOT NULL CHECK (status IN ('active', 'inactive'))
 );
-````
+
